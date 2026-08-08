@@ -1,0 +1,47 @@
+/* lays out the navbar content in a horizontal row */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* keeps navigation links aligned in a row */
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* removes default list styling from navbar lists */
+.navbar-links ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+/* gives links a simple reusable base style */
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* basic hover state for navigation links */
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* allows the navbar to stack on smaller screens */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .navbar-links,
+    .navbar-links ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

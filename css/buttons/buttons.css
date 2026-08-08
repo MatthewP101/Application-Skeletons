@@ -1,0 +1,42 @@
+/* basic reusable button foundation */
+.button {
+    display: inline-block;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* keeps button text and content aligned */
+.button {
+    line-height: 1;
+}
+
+/* simple hover feedback */
+.button:hover {
+    opacity: 0.85;
+}
+
+/* simple pressed state */
+.button:active {
+    transform: scale(0.98);
+}
+
+/* clear keyboard focus state for accessibility */
+.button:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+}
+
+/* visually indicates that the button cannot be used */
+.button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* allows a button to fill the width of its container */
+.button-full {
+    width: 100%;
+}

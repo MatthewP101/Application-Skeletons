@@ -1,0 +1,42 @@
+/* turns the container into a grid layout */
+.grid-container {
+    display: grid;
+}
+
+/* creates two equal-width columns */
+.grid-two-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+/* creates three equal-width columns */
+.grid-three-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+/* creates responsive columns that shrink and wrap automatically */
+.grid-responsive {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+/* adds consistent space between grid items */
+.grid-gap {
+    display: grid;
+    gap: 1rem;
+}
+
+/* allows an item to span across multiple columns */
+.grid-span-two {
+    grid-column: span 2;
+}
+
+/* centres grid items inside their cells */
+.grid-center {
+    display: grid;
+    place-items: center;
+}

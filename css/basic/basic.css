@@ -1,0 +1,44 @@
+/* removes default browser spacing and makes sizing easier to control */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* provides predictable base behaviour for the page */
+html {
+    scroll-behavior: smooth;
+}
+
+/* sets basic readable defaults for page content */
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+}
+
+/* prevents images from overflowing their containers */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* removes default list markers when lists are used for layouts or navigation */
+ul,
+ol {
+    list-style: none;
+}
+
+/* removes default link styling so it can be defined by the project */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* makes form elements use the same font as the rest of the page */
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
