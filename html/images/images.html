@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image example</title>
+</head>
+
+<body>
+
+    <!-- basic image with alternative text for accessibility -->
+    <img src="image.jpg" alt="description of image">
+
+    <!-- figure groups an image with related descriptive content -->
+    <figure>
+
+        <img src="image.jpg" alt="description of image">
+
+        <!-- figcaption provides a visible caption for the image -->
+        <figcaption>
+            image caption
+        </figcaption>
+
+    </figure>
+
+    <!-- picture allows different images to be used depending on screen size -->
+    <picture>
+
+        <!-- this image is used when the screen matches the media condition -->
+        <source media="(max-width: 600px)" srcset="image-small.jpg">
+
+        <!-- fallback image used when no source condition matches -->
+        <img src="image-large.jpg" alt="description of responsive image">
+
+    </picture>
+
+</body>
+
+</html>
