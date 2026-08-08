@@ -1,0 +1,32 @@
+# basic information about the flutter project
+name: basic_app
+description: a minimal reusable flutter application skeleton
+
+# prevents the skeleton from accidentally being published as a package
+publish_to: "none"
+
+version: 1.0.0+1
+
+# defines which dart versions the project supports
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+
+  # gives the project access to the flutter sdk
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+
+  # provides flutter testing tools
+  flutter_test:
+    sdk: flutter
+
+  # provides standard flutter code quality rules
+  flutter_lints: ^5.0.0
+
+flutter:
+
+  # enables material design features and icons
+  uses-material-design: true
