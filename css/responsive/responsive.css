@@ -1,0 +1,45 @@
+/* keeps page content from becoming too wide on large screens */
+.container {
+    width: min(100% - 2rem, 1200px);
+    margin-inline: auto;
+}
+
+/* allows images and media to scale with their container */
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* default mobile-first layout */
+.responsive-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+/* switches to two columns on medium screens */
+@media (min-width: 768px) {
+    .responsive-layout {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* switches to three columns on larger screens */
+@media (min-width: 1024px) {
+    .responsive-layout {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* hides content only on smaller screens */
+.hide-mobile {
+    display: none;
+}
+
+/* shows the hidden content again on larger screens */
+@media (min-width: 768px) {
+    .hide-mobile {
+        display: block;
+    }
+}

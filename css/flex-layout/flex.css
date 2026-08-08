@@ -1,0 +1,51 @@
+/* turns the container into a flexbox layout */
+.flex-container {
+    display: flex;
+}
+
+/* places items horizontally and centres them */
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* places items vertically and centres them */
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* adds consistent space between flex items */
+.flex-gap {
+    display: flex;
+    gap: 1rem;
+}
+
+/* allows items to move onto a new line when space runs out */
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* pushes items apart across the available space */
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* centres content both horizontally and vertically */
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* allows an individual flex item to grow and fill available space */
+.flex-grow {
+    flex: 1;
+}

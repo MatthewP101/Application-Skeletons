@@ -1,0 +1,34 @@
+/* basic reusable card container */
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* makes card images fill the available width */
+.card img {
+    width: 100%;
+    display: block;
+}
+
+/* provides spacing around the card content */
+.card-content {
+    padding: 1rem;
+}
+
+/* separates stacked content inside the card */
+.card-content > * + * {
+    margin-top: 0.75rem;
+}
+
+/* optional hover feedback for interactive cards */
+.card:hover {
+    transform: translateY(-2px);
+}
+
+/* allows several cards to be arranged in a flexible grid */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
