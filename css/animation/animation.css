@@ -1,0 +1,71 @@
+/* smoothly fades an element into view */
+.fade-in {
+    animation: fade-in 0.5s ease forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* moves an element upward while fading it into view */
+.slide-up {
+    animation: slide-up 0.5s ease forwards;
+}
+
+@keyframes slide-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* adds a simple scale effect when hovering over an element */
+.scale-hover {
+    transition: transform 0.2s ease;
+}
+
+.scale-hover:hover {
+    transform: scale(1.05);
+}
+
+/* adds a smooth transition to properties that may change */
+.transition {
+    transition: all 0.3s ease;
+}
+
+/* continuously rotates an element */
+.spin {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* disables animations when the user prefers reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
