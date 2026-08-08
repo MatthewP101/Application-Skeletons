@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>table example</title>
+</head>
+
+<body>
+
+    <!-- table displays data in rows and columns -->
+    <table>
+
+        <!-- caption gives the table a short description or title -->
+        <caption>table title</caption>
+
+        <!-- thead contains the heading row of the table -->
+        <thead>
+
+            <!-- tr represents a table row -->
+            <tr>
+
+                <!-- th represents a heading cell -->
+                <!-- scope helps describe whether the heading applies to a row or column -->
+                <th scope="col">name</th>
+                <th scope="col">category</th>
+                <th scope="col">value</th>
+
+            </tr>
+
+        </thead>
+
+        <!-- tbody contains the main data inside the table -->
+        <tbody>
+
+            <tr>
+
+                <!-- td represents a normal table data cell -->
+                <td>item 1</td>
+                <td>category 1</td>
+                <td>value 1</td>
+
+            </tr>
+
+            <tr>
+                <td>item 2</td>
+                <td>category 2</td>
+                <td>value 2</td>
+            </tr>
+
+        </tbody>
+
+        <!-- tfoot contains summary or final information -->
+        <!-- it is optional and can be removed when not needed -->
+        <tfoot>
+
+            <tr>
+                <td colspan="2">total</td>
+                <td>total value</td>
+            </tr>
+
+        </tfoot>
+
+    </table>
+
+</body>
+
+</html>
